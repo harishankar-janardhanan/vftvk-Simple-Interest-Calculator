@@ -11,7 +11,7 @@ function compute()
 
     var interest = (p * r * t)/100;
     var final_year =  Number(new Date().getFullYear()) + Number(t);
-    var final_amount = Number(p) + Number(interest);
+    var final_amount = Number(interest);
     
     p =  `<span class="highlight">${p}</span>`; 
     r = `<span class="highlight">${r}</span>`;
