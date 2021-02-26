@@ -2,7 +2,6 @@ function compute()
 {
     if(!validateForm())
     {
-        fname.focus();
         return false;
     }
     var p = document.getElementById("principal").value;
@@ -33,7 +32,7 @@ function validateForm()
     if(p == null || p == 0 || p < 0)
     {
         alert("Please enter positive value in principal field");
-        fname.focus();
+        document.getElementById("principal").focus();
         return false;
     }
     return true;
